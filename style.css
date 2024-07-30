@@ -1,0 +1,274 @@
+@font-face {
+    font-family: Roboto;
+    src: url("./assests/fonts/RobotoMono-Medium.ttf");
+}
+
+body{
+    overflow-x: hidden;
+    
+}
+
+/* =============================== HEADER */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 650px;
+    position: absolute;
+    z-index: 3;
+}
+.header>img{
+    margin-left: 200px;
+    width: 60px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.menu>li{
+    list-style: none;
+}
+.menu>li>a{
+    text-decoration: none;
+    color: white;
+}
+.menu>li>a:hover{
+    color: green;
+}
+.menu>button:hover{
+    background-color: blue;
+    color: white;
+    border: 3px dotted white;
+}
+.menu>button{
+    border-radius: 15px;
+    padding: 5px 8px;
+}
+/* ============================================================== MAIN*/
+main{
+    display: flex;
+    position: relative;
+}
+.left>.text{
+    margin-top: 280px;
+    margin-left: 200px;
+}
+.text>h1{
+    font-size: 55px;
+    margin-left: -8px;
+}
+.text>p{
+    margin-top: -35px;
+    color: gray;
+    font-weight: bold;
+}
+.left>.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+    margin-left: 65px;
+    margin-top: 70px;
+}
+.left>.icons>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    font-size: 30px;
+    border-radius: 5px;
+    font-weight: bolder;
+   
+}
+.left>.icons>span>img{
+     width: 40px; 
+     border-radius:50%;
+}
+
+.right{
+  background-color: black;
+  width: 950px;
+  position: absolute;
+  right: -80px;
+  top: -70px;
+  transform: rotate(10deg);
+  padding-bottom: 110px;
+}
+.right>img{
+    width:750px ;
+    margin-top: 150px;
+    transform: rotate(-10deg);
+}
+/* =========================== MAIN BOTTOM */
+.main_bottom{
+    width: 105%;
+    height: 220px;
+    margin-top: 800px;
+    position: absolute;
+    left: -10px;
+    z-index: 4;
+    background-color: rgb(43, 43, 43);
+    display: flex;  
+}
+.main_bottom>.texts{
+    margin-left: 70px;
+}
+.main_bottom>.texts>h2{
+    color: white;
+}
+.main_bottom>.texts>p{
+color: white;
+font-size: 15px;
+width: 1000px;
+}
+#read_more_btn{
+    background-color: inherit;
+    color: white;
+    border: none;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+#read_more_btn:hover{
+   background-color: white;
+   color: black;
+}
+.main_bottom>span{
+    width: 250px;
+    font-size: 180px;
+    border: 10px solid black;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    text-align: center;
+    height: 250px;
+    transform: rotate(30deg);
+    margin-left: 120px;
+}
+/* ================ABOUT ME */
+.text_hider{
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    right: 80px;
+    top: 134.3%;
+    z-index: 5;
+}
+section{
+    margin-left: 280px;
+}
+
+#about_me{
+    margin-top: 560px;
+    background-color: white;
+    z-index: 4;
+    width: 100%;
+}
+#section_title{
+    margin-top: 80px;
+    border: 5px solid black;
+    width: 220px;
+    margin-left: 25%;
+    text-align: center;
+    padding: 15px;
+    font-family: Roboto;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+ #section_title+p{
+    margin-top: 50px;
+    margin-left: 8%;
+    text-align: center;
+    width: 700px;
+ }
+ #section_title+p+span{
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding: 5px 20px;
+    text-align: center;
+    margin-left: 28%;
+ }
+ .section_marks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    position: relative;
+    margin-left: -560px;
+ }
+ .section_marks>b{
+font-size: 24px;  
+position: absolute;
+top: 30px;
+}
+ .section_marks>span{
+    font-size: 70px;
+    letter-spacing: -4px;
+ }
+ .knowledges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+ }
+.knowledges>div{
+    width: 420px;
+    position: relative;
+}
+.knowledges>div:nth-child(3){
+    margin-left: 300px;
+    margin-top: -80px;
+}
+
+.knowledges>div>img{
+    position: absolute;
+    opacity: 0.3;
+    top: 2px;
+    width: 60px;
+}
+.knowledges>div>h2{
+    margin-left: 35px;
+    font-family: Roboto;
+    letter-spacing: 2px;
+}
+.knowledges>div>p{
+    text-align: center;
+}
+
+/* ================= SKILLS */
+#skills>#section_title{
+    margin-left: 28%;
+}
+.using_now{
+    margin-left: 37px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.using_now>p{
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 3px;
+    font-weight: 800;
+    
+}
+.techno-es{
+    display: flex;
+    flex-wrap: wrap;
+    gap:110px;
+}
+.tech{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tech>img{
+    width: 150px;
+}
+.tech>p{
+    font-size: 25px;
+    font-family: monospace;
+}
