@@ -2,12 +2,10 @@
     font-family: Roboto;
     src: url("./assests/fonts/RobotoMono-Medium.ttf");
 }
-
 body{
     overflow-x: hidden;
-    
+    background-color: #D7D7D7;
 }
-
 /* =============================== HEADER */
 .header{
     display: flex;
@@ -141,8 +139,8 @@ width: 1000px;
     border: 10px solid black;
     border-top-right-radius: 35px;
     border-bottom-left-radius: 35px;
-    border-bottom-color:white ;
-    border-right-color:white ;
+    border-bottom-color:#D7D7D7 ;
+    border-right-color:#D7D7D7 ;
     text-align: center;
     height: 250px;
     transform: rotate(30deg);
@@ -151,11 +149,12 @@ width: 1000px;
 /* ================ABOUT ME */
 section{
     margin-left: 280px;
+    background-color: inherit;
 }
 
 #about_me{
     margin-top: 560px;
-    background-color: white;
+    background-color: inherit;
     z-index: 4;
     width: 100%;
 }
@@ -230,26 +229,31 @@ top: 30px;
 }
 
 /* ================= SKILLS */
+#skills{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
 #skills>#section_title{
     margin-left: 28%;
 }
-.using_now{
+#skills>div{
     margin-left: 37px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.using_now>p{
+#skills>div>p{
     font-size: 20px;
     font-family: Roboto;
     letter-spacing: 3px;
     font-weight: 800;
-    
 }
 .techno-es{
     display: flex;
     flex-wrap: wrap;
     gap:110px;
+    row-gap: 50px;
 }
 .tech{
     display: flex;
@@ -264,3 +268,17 @@ top: 30px;
     font-size: 25px;
     font-family: monospace;
 }
+.tech>img:hover{
+    animation: bigger 1s linear;
+    -webkit-animation: bigger 1s linear;
+}
+.other_skills>.techno-es{
+    margin-left: -50px;
+}
+@keyframes bigger {
+from{
+    transform: translateY(-15px);
+}
+to{
+    scale: 2;
+}}
